@@ -25,12 +25,22 @@
     <!-- Header -->
     <header class="header">
       <div class="head container">
+        
+        
         <nav class="navigation">
           <!-- LOGO -->
+          <div class="container-mob">
           <a href="./index.html" class="link logo"
             >Web<span class="link logo-part">Studio</span></a
           >
+          <button type="button" class="menu-open-btn js-open-menu" >
+          <svg class="menu-open-svg" width="32" height="22">
+            <use href="./images/icons.svg#icon-menubtn-1"></use>
+          </svg>
+        </button>
+      </div>
           <!-- Navigation links -->
+          <div class="fsd">
           <ul class="list list-nav">
             <li>
               <a href="./index.html" class="link nav-site current">Studio</a>
@@ -55,7 +65,73 @@
               >
             </li>
           </ul>
+        </address></div>
+        
+<!-- Mobile menu -->
+        <div class="mob-menu js-menu-container" >
+          <div>
+          <button type="button" class="menu-close-btn js-close-menu" >
+            <svg class="icon-modal-menu" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="list mob-nav">
+            <li class="mob-menu-page">
+              <a href="./index.html" class="link mob-site current">Studio</a>
+            </li>
+            <li class="mob-menu-page">
+              <a href="./portfolio.html" class="link mob-site">Portfolio</a>
+            </li>
+            <li class="mob-menu-page"><a href="" class="link mob-site">Contacts</a></li>
+          </ul>
+        </nav></div>
+        <!-- Contacts mail and phone -->
+        <div>
+        <address class="mob-contacts">
+          <ul class="list mob-list-contacts">
+            <li>
+              <a href="tel:+110001111111" class="link mob-menu-tel"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="link mob-menu-email"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
         </address>
+        <ul class="list mob-social-list">
+                  <li class="mob-social-icon">
+                    <a href="" class="mob-social-link"
+                      ><svg class="icon-social" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mob-social-icon">
+                    <a class="mob-social-link">
+                      <svg class="icon-social" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mob-social-icon">
+                    <a class="mob-social-link">
+                      <svg class="icon-social" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mob-social-icon">
+                    <a class="mob-social-link">
+                      <svg class="icon-social" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul></div>
+        </div>
       </div>
     </header>
     <main>
@@ -131,6 +207,7 @@
           <ul class="list do-examples">
             <li class="exampel">
               <img
+                srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="computer with open designed app"
                 width="360"
@@ -138,6 +215,7 @@
             </li>
             <li class="exampel">
               <img
+                srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
                 src="./images/img2.jpg"
                 alt="opened app on the phon and layers of it"
                 width="360"
@@ -145,6 +223,7 @@
             </li>
             <li class="exampel">
               <img
+                srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
                 src="./images/img3.jpg"
                 alt="mobile with open designed app"
                 width="360"
@@ -160,6 +239,7 @@
           <ul class="list team">
             <li class="team-members">
               <img
+                srcset="./images/img4.jpg 1x, ./images/img4@2x.jpg 2x"
                 src="./images/img4.jpg"
                 alt="photo of Product Designer"
                 width="264"
@@ -201,6 +281,7 @@
             </li>
             <li class="team-members">
               <img
+                srcset="./images/img5.jpg 1x, ./images/img5@2x.jpg 2x"
                 src="./images/img5.jpg"
                 alt="photo of Frontend Developer"
                 width="264"
@@ -243,6 +324,7 @@
             </li>
             <li class="team-members">
               <img
+                srcset="./images/img6.jpg 1x, ./images/img6@2x.jpg 2x"
                 src="./images/img6.jpg"
                 alt="photo of employee of Marketing"
                 width="264"
@@ -285,6 +367,7 @@
             </li>
             <li class="team-members">
               <img
+                srcset="./images/img7.jpg 1x, ./images/img7@2x.jpg 2x"
                 src="./images/img7.jpg"
                 alt="foto of UI Designer"
                 width="264"
@@ -382,47 +465,49 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container footer-content">
-        <div class="footer-right">
-          <a href="./index.html" class="logo-footer link"
-            >Web<span class="link logo-footer-part">Studio</span></a
-          >
-          <p class="footer-slogan">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
-        <div class="footer-social-container">
-          <p class="titel-socials">Social media</p>
-          <ul class="list footer-social-list">
-            <li class="footer-social-point">
-              <a href="" class="link footer-socials">
-                <svg class="icon-svg-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-point">
-              <a href="" class="link footer-socials">
-                <svg class="icon-svg-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-point">
-              <a href="" class="link footer-socials">
-                <svg class="icon-svg-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-point">
-              <a href="" class="link footer-socials">
-                <svg class="icon-svg-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="tablet-footer">
+          <div class="footer-right">
+            <a href="./index.html" class="logo-footer link"
+              >Web<span class="link logo-footer-part">Studio</span></a
+            >
+            <p class="footer-slogan">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="footer-social-container">
+            <p class="titel-socials">Social media</p>
+            <ul class="list footer-social-list">
+              <li class="footer-social-point">
+                <a href="" class="link footer-socials">
+                  <svg class="icon-svg-footer" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-point">
+                <a href="" class="link footer-socials">
+                  <svg class="icon-svg-footer" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-point">
+                <a href="" class="link footer-socials">
+                  <svg class="icon-svg-footer" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-point">
+                <a href="" class="link footer-socials">
+                  <svg class="icon-svg-footer" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <!-- form footer -->
         <div class="container-for-form">
@@ -539,5 +624,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
