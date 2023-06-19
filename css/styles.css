@@ -1446,37 +1446,21 @@ img {
         gap: 80px;
     }
 
-    .titel-socials {
-        text-align: left;
-    }
 
-    .head {
-        display: flex;
-        height: 72px;
-
-    }
 
 
 
     .navigation {
-        display: flex;
-        align-items: center;
+
         margin-left: 156px;
     }
 
-    .list-nav {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
 
-        padding: 0px;
-        gap: 40px;
-
-    }
 
     .list-contacts {
         display: flex;
         flex-direction: row;
+
         padding: 0;
         gap: 40px;
         position: fixed;
@@ -1485,37 +1469,10 @@ img {
 
     }
 
-    .nav-site.current::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -1px;
-        border-radius: 2px;
-        width: 100%;
-        height: 4px;
-        background-color: #404bbf;
-
-    }
-
-
-    .nav-site {
-
-        font-weight: 500;
+    .contact {
         font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: var(--secondary-color-text);
-        padding: 24px 0;
-        display: block;
-        position: relative;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .nav-site:hover,
-    .nav-site:focus {
-        color: #404bbf;
-
-    }
 
     .fsd {
         display: flex;
@@ -1523,29 +1480,6 @@ img {
         justify-content: space-between;
     }
 
-    .current {
-        color: #404bbf;
-    }
 
-    .contacts {
-        font-style: normal;
 
-    }
-
-    .contact {
-
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: var(--primary-color-text);
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    }
-
-    .contact:hover,
-    .contact:focus {
-        color: var(--accent-color);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
 }
