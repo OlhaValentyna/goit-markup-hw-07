@@ -178,6 +178,12 @@ body {
     margin-bottom: 40px;
 }
 
+.mob-social-list {
+    display: flex;
+    gap: 56px;
+    justify-content: flex-start;
+}
+
 .mob-menu-email {
     font-weight: 500;
     font-size: 20px;
@@ -201,17 +207,20 @@ body {
     .head {
         padding: 24px 15px;
     }
+
+    .mob-social-list {
+        display: flex;
+        gap: 0;
+        justify-content: space-between;
+    }
 }
 
-.mob-social-list {
-    display: flex;
-    gap: 56px;
-}
 
-.header>.container {
+
+/* .header>.container {
     padding: 24px 16px 24px 16px;
     min-width: 100%;
-}
+} */
 
 .mob-social-link {
     display: flex;
@@ -233,7 +242,7 @@ body {
 /* Main section hero */
 .hero {
     background-color: #2E2F42;
-    padding: 188px 0;
+    padding: 112px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/backgroundheromob.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -312,9 +321,7 @@ body {
     color: var(--primary-color-text);
 }
 
-li:last-child {
-    margin: 0;
-}
+
 
 .titel-section {
     font-weight: 700;
@@ -336,11 +343,13 @@ li:last-child {
     min-width: 264px;
 }
 
+
 .team-members {
     background: var(--backdround-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-    margin-bottom: 72px;
+    width: 264px;
+
 }
 
 .name-employee {
@@ -540,6 +549,10 @@ ul {
     margin-bottom: 72px;
 }
 
+.features:last-child {
+    margin-bottom: 0;
+}
+
 /* What we are doing */
 .do-examples {
     display: flex;
@@ -608,9 +621,9 @@ ul {
 
 img {
     display: block;
-    max-width: 100%;
+
     height: auto;
-    width: 100%;
+
 }
 
 .container-card {
@@ -744,7 +757,8 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 408px;
+    max-width: 408px;
+    width: 100%;
     min-height: 584px;
     padding: 72px 24px 24px 24px;
     background: #FCFCFC;
@@ -1053,7 +1067,21 @@ img {
 
 @media screen and (min-width: 320px) and (max-width: 764px) {
     .container {
-        man-width: 396px;
+        max-width: 428px;
+    }
+
+    .team {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 72px;
+        width: 264px;
+        margin: 0 auto;
+    }
+
+    .header>.container {
+        padding: 24px 16px 24px 16px;
+        min-width: 100%;
     }
 }
 
@@ -1194,7 +1222,7 @@ img {
     .head {
         display: flex;
         height: 72px;
-
+        justify-content: space-between;
     }
 
 
@@ -1219,10 +1247,6 @@ img {
         flex-direction: column;
         padding: 0;
         gap: 12px;
-        position: fixed;
-        right: 16px;
-        top: 16px;
-
     }
 
     .nav-site.current::after {
@@ -1257,11 +1281,6 @@ img {
 
     }
 
-    .fsd {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
 
     .current {
         color: #404bbf;
@@ -1269,7 +1288,7 @@ img {
 
     .contacts {
         font-style: normal;
-
+        padding: 16px 0;
     }
 
     .contact {
@@ -1371,6 +1390,7 @@ img {
     }
 
     .hero {
+        padding: 188px 0px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/backgroundhero.jpg);
     }
 
@@ -1446,33 +1466,21 @@ img {
         gap: 80px;
     }
 
-
-
-
-
-    .navigation {
-
-        margin-left: 156px;
-    }
-
-
-
     .list-contacts {
         display: flex;
         flex-direction: row;
-
         padding: 0;
         gap: 40px;
-        position: fixed;
-        right: 70px;
-        top: 24px;
-
     }
 
     .contact {
         font-size: 16px;
+
     }
 
+    .contacts {
+        padding: 24px 0px;
+    }
 
     .fsd {
         display: flex;
